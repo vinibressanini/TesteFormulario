@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;600&family=Shalimar&display=swap" rel="stylesheet">
+        <link href = "style.css" rel="stylesheet"/>
+        <title>Cadastro Teste </title>
+    </head>
+    <body>
+        <div>        <!--Título e subtítulo-->>
+            <h1 class = "Cabeçalho">Cadastro de Pessoas</h1>
+            <h3 name = "parágrafo" class="paragrafo"><strong>Insira seus dados</strong></h3>
+        </div>  
+        
+        <form>
+            <fieldset>  
+                <div>  <!--Campos de nome,sobrenome e email -->>
+                    <label id="nomes" for="nome"><strong>Nome : </strong></label> 
+                    <input type="text" id = "nome" name="nome" required>
+                    <br>
+                    <label id="nomes" for="snome"><strong>Sobrenome: </strong></label>
+                    <input type="text" id= "snome" name="snome" required> 
+                    <br>
+                    <label id="nomes" for="email"><strong>Email: </strong></label>
+                    <input type="email" id = "email" name="email" required>
+            </div> 
+      
+
+            <div id = "interesse">  <!--Radio buttons -->>
+                <label ><strong>Você tem interesse em se tornar programador? </strong></label>
+                <label >
+                    <input type="radio"  name=escolha checked ><strong>Sim</strong>
+                </label>
+                <label >
+                <input type="radio" name="escolha" ><strong> Não</strong>
+                </label>
+                <label >
+                    <input type="radio" name="escolha" > <strong>Talvez</strong> 
+                </label>
+            </div>
+
+            <div id = "sexo"> <!-- Drop-down list-->>
+                <label><strong>Qual o seu sexo?</strong> </label>
+                <select id="sexo">
+                    <option selected disabled value="">Selecione... </option>
+                    <option>Masculino</option>
+                    <option >Feminino</option>
+                    <option >Outro</option>
+                </select>    
+            </div>
+
+            <div> <!--Textarea descrição-->
+                <label for="desc" id = "desc1"><strong>Conte um pouco sobre você: </strong></label>
+                <textarea placeholder="Escreva Aqui..." name="desc" id="desc" cols="30" rows="3"></textarea >  
+            </div>
+
+            <div> <!--button-->
+                <input type="button" id ="enviar" value = "Enviar">
+            </div>
+        </fieldset>
+        </form>
+    </body>
+</html>
